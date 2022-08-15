@@ -32,7 +32,7 @@ sleep 6
 
 # sudo apt-get install -y tig
 
-sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
 sudo apt-get install neovim -y
 cargo install exa
