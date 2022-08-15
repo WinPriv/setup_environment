@@ -53,3 +53,5 @@ git clone --recurse-submodules https://github.com/WinTush/dotfiles.git ~/.dotfil
 
 cd ~/.dotfiles
 ./install
+
+nvim +PackerSync
