@@ -10,15 +10,24 @@ sleep 5
 sudo apt-get update && sudo apt-get upgrade -y
 
 echo installing the must-have pre-requisites
-while read -r p ; do sudo apt-get install -y $p ; done < <(cat << "EOF"
+while read -r p; do sudo apt-get install -y "$p"; done < <(
+	cat <<"EOF"
+    automake cmake
     cargo
     clang
     curl
     fish
+    fzf
     jq
+    lazygit
     perl
+    python3 python3-pip
+    ranger
+    ripgrep
     software-properties-common
+    tmux
     wget
+    xsel
     zip unzip
 EOF
 )
