@@ -12,7 +12,8 @@ sudo apt-get update && sudo apt-get upgrade -y
 echo installing the must-have pre-requisites
 while read -r p; do sudo apt-get install -y "$p"; done < <(
 	cat <<"EOF"
-    automake cmake
+    automake
+    cmake
     cargo
     clang
     curl
@@ -37,7 +38,7 @@ echo you have 5 seconds to proceed ...
 echo or
 echo hit Ctrl+C to quit
 echo -e "\n"
-sleep 6
+sleep 5
 
 # sudo apt-get install -y tig
 
