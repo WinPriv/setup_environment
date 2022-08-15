@@ -61,6 +61,8 @@ cargo install stylua
 cargo install exa
 go install github.com/jesseduffield/lazygit@latest
 
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 git clone --recurse-submodules https://github.com/WinTush/dotfiles.git ~/.dotfiles
 
 cd ~/.dotfiles
