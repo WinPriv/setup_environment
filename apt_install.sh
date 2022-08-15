@@ -20,9 +20,9 @@ while read -r p; do sudo apt-get install -y "$p"; done < <(
     fish
     fzf
     jq
-    lazygit
     perl
-    python3 python3-pip
+    python3
+    python3-pip
     ranger
     ripgrep
     software-properties-common
@@ -46,6 +46,7 @@ sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
 sudo apt-get install neovim -y
 cargo install exa
+go install github.com/jesseduffield/lazygit@latest
 
 git clone --recurse-submodules https://github.com/WinTush/dotfiles.git ~/.dotfiles
 
