@@ -18,12 +18,15 @@ while read -r p; do sudo apt-get install -y "$p"; done < <(
     clang
     curl
     fish
+    fontconfig
     fzf
     golang
     jq
+    peco
     perl
     python3
     python3-pip
+    python3-venv
     ranger
     ripgrep
     software-properties-common
@@ -47,6 +50,14 @@ sleep 5
 sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
 sudo apt-get install neovim -y
+
+# neovim formatters
+pip3 install pipx pynvim
+pipx install black
+pipx install flake8
+pipx install sqlfluff
+cargo install stylua
+
 cargo install exa
 go install github.com/jesseduffield/lazygit@latest
 
