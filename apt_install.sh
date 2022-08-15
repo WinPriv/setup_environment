@@ -19,6 +19,7 @@ while read -r p; do sudo apt-get install -y "$p"; done < <(
     curl
     fish
     fzf
+    golang
     jq
     perl
     python3
