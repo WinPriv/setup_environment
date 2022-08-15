@@ -27,9 +27,10 @@ while read -r p; do sudo apt-get install -y "$p"; done < <(
     ripgrep
     software-properties-common
     tmux
+    unzip
     wget
     xsel
-    zip unzip
+    zip
 EOF
 )
 
