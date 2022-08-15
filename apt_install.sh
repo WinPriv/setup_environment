@@ -37,11 +37,7 @@ sudo apt-get update
 sudo apt-get install neovim -y
 cargo install exa
 
-git clone https://github.com/WinTush/dotfiles.git ~/.dotfiles
+git clone --recurse-submodules https://github.com/WinTush/dotfiles.git ~/.dotfiles
 
 cd ~/.dotfiles
 ./install
-
-rm -f ~/.config/nvim
-git clone https://github.com/LunarVim/Neovim-from-scratch.git ~/.config/nvim
-nvim +PackerSync
